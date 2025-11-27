@@ -1,0 +1,65 @@
+.traffic-light{
+    width: 80px;
+    height: 300px;
+    padding: 20px;
+    background-color: rgb(63, 62, 62);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.red {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: traffic-red 6s infinite;
+}
+
+
+.yellow{
+      background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: traffic-yellow 6s infinite;
+    
+}
+
+
+
+
+.green{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: traffic-green 6s infinite;
+}
+
+
+
+@keyframes traffic-red {
+    0%, 40% {opacity: 1;}
+    41%,100% {opacity: 0.2;}
+    
+}
+
+
+
+@keyframes traffic-yellow{
+    41%, 60% {opacity: 1;}
+    0%, 40%, 61%, 100% {opacity: 0.2;}
+    
+}
+
+
+@keyframes traffic-green {
+    61%, 100% {opacity: 1;}
+    0%, 60% {opacity: 0.2;}
+}
